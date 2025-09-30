@@ -38,7 +38,7 @@ public class NamaBulan {
 			System.out.println ("Oktober");
 			break;
 		case 11:
-			System.out.println ("Novemer");
+			System.out.println ("November");
 			break;
 		case 12:
 			System.out.println ("Desember");
