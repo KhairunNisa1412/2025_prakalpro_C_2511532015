@@ -24,9 +24,7 @@ public class String2_2511532015 {
 		System.out.println ("String a + String b= "+ c);
 		String v= a+y;
 		System.out.println ("String a + integer y= "+ v);
-		String s1= "Halo";
-		s1.replace("l","w");
-		System.out.println (s1);
+
 	}
 
 }

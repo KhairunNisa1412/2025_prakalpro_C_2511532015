@@ -14,6 +14,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class OperatorAritmatikaGUI_2511532015 extends JFrame {
 
@@ -49,6 +50,7 @@ public class OperatorAritmatikaGUI_2511532015 extends JFrame {
 	 * Create the frame.
 	 */
 	public OperatorAritmatikaGUI_2511532015() {
+		setBackground(new Color(255, 255, 255));
 		setTitle("Operator Aritmatika");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 300, 300);
@@ -107,9 +109,9 @@ public class OperatorAritmatikaGUI_2511532015 extends JFrame {
 			int hasil;
 			public void actionPerformed(ActionEvent e) {
 				if (txtBil1.getText().trim().isEmpty()) {
-					pesanPeringatan("Bilangan 1 Harus diisi");
+					pesanPeringatan("Bilangan 1 Harus diinput!");
 				} else if (txtBil2.getText().trim().isEmpty()) {
-					pesanPeringatan("Bilangan 2 harus diinput");
+					pesanPeringatan("Bilangan 2 harus diinput!");
 				} else {
 					try {
 						int a= Integer.valueOf(txtBil1.getText());
@@ -132,7 +134,7 @@ public class OperatorAritmatikaGUI_2511532015 extends JFrame {
 						}
 						txtHasil.setText(String.valueOf(hasil));
 					} catch (NumberFormatException ex) {
-						pesanEror ("Bilangan 1 dan Bilangan 2 harus angka");
+						pesanEror ("Bilangan 1 dan Bilangan 2 harus angka!");
 					}
 				}
 				
