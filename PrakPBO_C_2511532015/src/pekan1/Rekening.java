@@ -29,7 +29,7 @@ public class Rekening {
 		System.out.println ("Rekening atas nama "+ namaPemilik +" berhasil dibuat dengan saldo " + rupiah.format(saldo));
 	}
 	public void setorTunai (double nominal) {
-		if (nominal >= 10000 && nominal <= 50000 ) {
+		if (nominal >= 10000 && nominal <= 50A000 ) {
 			saldo += nominal;
 			//merekam riwayat (pembuatan objek transaksi di dalam method)
 			String idTrx = "TRX-S-" + System.currentTimeMillis();
